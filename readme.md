@@ -4,7 +4,7 @@
     - spots that differ are (to be) marked with COWBELL
 -->
 
-# DotNet 2.0.0 SDK<!--COWBELL-->
+# .NET Core 2.0.0 SDK<!--COWBELL-->
 
 This package installs the .NET Core 2.0 SDK<!--COWBELL--> for your platform and provides the `dotnet` executable.
 
