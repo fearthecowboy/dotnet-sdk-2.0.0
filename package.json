@@ -1,6 +1,6 @@
 {
   "name": "dotnet-sdk-2.0.0",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Platform Agnostic utility/library to install dotnet sdk into a folder",
   "engines": {
     "node": ">=6.4.0"
