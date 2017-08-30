@@ -1,0 +1,39 @@
+{
+  "name": "dotnet-sdk-2.0.0",
+  "version": "1.1.1",
+  "description": "Platform Agnostic utility/library to install dotnet sdk into a folder",
+  "engines": {
+    "node": ">=6.4.0"
+  },
+  "main": "./dist/app.js",
+  "typings": "./dist/main.d.ts",
+  "bin": {
+    "dotnet": "./dist/call.js",
+    "dotnet-sdk": "./dist/call.js",
+    "-dotnet-sdk": "./dist/app.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "start": "node dist/app.js",
+    "postinstall": "node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olydis/dotnet-sdk-2.0.0.git"
+  },
+  "keywords": [
+    "dotnet",
+    "runtime",
+    "install"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^8.0.22",
+    "@types/npm": "^2.0.28",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "yarn": "^0.27.5"
+  }
+}
