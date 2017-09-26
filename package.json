@@ -1,15 +1,16 @@
 {
   "name": "dotnet-sdk-2.0.0",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Platform agnostic installation of .NET Core SDK 2.0.0",
   "engines": {
     "node": ">=6.4.0"
   },
-  "main": "./dist/app.js",
+  "main": "./dist/call.js",
   "typings": "./dist/main.d.ts",
   "bin": {
     "dotnet": "./dist/call.js",
     "dotnet-sdk": "./dist/call.js",
+    "dotnet-sdk-2.0.0": "./dist/call.js",
     "-dotnet-sdk": "./dist/app.js"
   },
   "scripts": {
@@ -17,7 +18,7 @@
     "build": "tsc",
     "prepare": "shx rm -rf ./dist/ && tsc && shx cp -R ./node_modules/fs-monkey/lib/ ./dist/fs-monkey/ && cd ./yarn && npm install",
     "start": "node dist/app.js",
-    "postinstall": "node -e \"try { fs.statSync('./dist/app.js') ; require('./dist/app.js')} catch (e){}\""
+    "postinstall": "node -e \"/*PostInstall: Installs platform-specific .NET framework */try{require('./dist/app.js')}catch(e){}\""
   },
   "repository": {
     "type": "git",
